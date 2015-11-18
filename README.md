@@ -10,7 +10,7 @@ Insert script before ```</body>``` :
 
 Use "goTo(id)" function on click. :
 
-# Usage exampel
+# Usage example
 
 ```
 <header id="top">...</header>
