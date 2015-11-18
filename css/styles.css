@@ -1,0 +1,42 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+}
+
+header nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+header nav ul li a {
+	cursor: pointer;
+}
+
+#sunrise {
+	height: 500px;
+	background: linear-gradient(#000F2A,#2372A6,#D4C4AB);
+}
+#morning {
+	height: 500px;
+	background: linear-gradient(#D4C4AB, #C6E4EE);
+}
+#day {
+	height: 500px;
+	background: linear-gradient(#fff, #ccc);
+}
+#evening {
+	height: 500px;
+	background: linear-gradient(#fff, #ccc);
+}
+#sunset {
+	height: 500px;
+	background: linear-gradient(#fff, #ccc);
+}
+#night {
+	height: 500px;
+	background: linear-gradient(#fff, #ccc);
+}
