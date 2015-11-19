@@ -1,5 +1,6 @@
-# smooth-scroll-js
-Smooh animation for scroll to element, bottom or top
+# Smooth Scroll JS
+Pure Javascript smooth scroll animation
+No jQuery or any other framework
 
 # Demo
 [Try DEMO](http://anton.temchenko.com.ua/dev/smooth-scroll-js/)
