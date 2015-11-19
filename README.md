@@ -9,9 +9,10 @@ Pure Javascript smooth scroll animation
 
 # How to Use
 Insert script before ```</body>``` :
-```...
-	</body>
+```
+	...
 	<script src="js/smooth-scroll.js"></script>
+	</body>
 ```
 
 Use "goTo(id)" function on click. :
