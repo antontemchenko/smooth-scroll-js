@@ -1,6 +1,8 @@
 # Smooth Scroll JS
 Pure Javascript smooth scroll animation
-No jQuery or any other framework
+--* No jQuery or any other framework
+--* Easy to use
+--* Speed configuration
 
 # Demo
 [Try DEMO](http://anton.temchenko.com.ua/dev/smooth-scroll-js/)
