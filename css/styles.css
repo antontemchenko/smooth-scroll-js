@@ -1,19 +1,76 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 header {
 	position: fixed;
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+header nav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0px 20px;
 }
 
 header nav ul li {
 	list-style: none;
 	display: inline-block;
+	margin: 0;
 }
 
-header nav ul li a {
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+header nav ul li a, aside nav ul li a  {
 	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	transition: 0.3s ease-out;
+	text-transform: uppercase;
+	margin: 0;
+	border: 2px solid rgba(255,255,255,.5);
+	border-radius: 5px;
+}
+
+header nav ul li a:hover, header nav ul li a.active, aside nav ul li a:hover, aside nav ul li a.selected {
+	background: rgba(255,255,255,.5);
+	color: #000;
+	border-color: transparent;
+}
+
+aside {
+	position: fixed;
+	left: 0;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+aside nav ul li {
+	display: list-item;
+	width: 80px;
+	margin: 5px 10px;
+}
+
+aside nav ul li a {
+	width: 100%;
+}
+
+h1 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: rgba(255,255,255,.5);
+	text-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 #sunrise {
@@ -22,21 +79,21 @@ header nav ul li a {
 }
 #morning {
 	height: 500px;
-	background: linear-gradient(#D4C4AB, #C6E4EE);
+	background: linear-gradient(#D4C4AB, #FDA356, #C6E4EE);
 }
 #day {
 	height: 500px;
-	background: linear-gradient(#fff, #ccc);
+	background: linear-gradient(#C6E4EE,#ADECFC,#08C5F3);
 }
 #evening {
 	height: 500px;
-	background: linear-gradient(#fff, #ccc);
+	background: linear-gradient(#08C5F3, #ECDCCD);
 }
 #sunset {
 	height: 500px;
-	background: linear-gradient(#fff, #ccc);
+	background: linear-gradient(#ECDCCD,#F1650A, #734D5F);
 }
 #night {
 	height: 500px;
-	background: linear-gradient(#fff, #ccc);
+	background: linear-gradient(#734D5F, #040535, #000000);
 }

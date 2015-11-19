@@ -4,9 +4,12 @@ window.Object.defineProperty( Element.prototype, 'documentOffsetTop', {
     }
 } );
 
+window.speed = 10;
+
 function goTo(id){	
     var to = document.getElementById(id).documentOffsetTop;
     animatedScroll(to);
+    selectThisOne(event.target);
 }
 
 function animatedScroll(to){
@@ -24,14 +27,31 @@ function animatedScroll(to){
 			sign = -1;
 		}
 		var dif = (to-from)*sign;
-		var step = dif/10;
+		var step = dif/window.speed;
 		var timer = setInterval(function(){
 			from = (Math.round(from*100)/100) + (step*sign);
 			window.scrollTo(0, from);
 			if (Math.round(from) == to || (window.innerHeight + window.scrollY) >= document.body.offsetHeight){
 				clearInterval(timer);
 			}
-		}, 10);
+		}, window.speed);
 
 	}
+}
+
+function selectThisOne(element){
+	var oldElement = document.getElementsByClassName("active")
+	if(oldElement.length>0){	
+		oldElement[0].className = "";
+	}
+	element.className = "active";
+}
+
+function setSpeed(speed) {
+	window.speed = speed;
+	var oldElement = document.getElementsByClassName("selected")
+	if(oldElement.length>0){	
+		oldElement[0].className = "";
+	}
+	event.target.className = "selected";
 }

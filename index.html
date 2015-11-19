@@ -8,10 +8,11 @@
         <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
     </head>
     <body>
+    <h1>Smooth Scroll JS</h1>
     <header>
         <nav>
             <ul>
-                <li><a onclick="goTo('sunrise')">SunRise</a></li>
+                <li><a onclick="goTo('sunrise')" class="active">SunRise</a></li>
                 <li><a onclick="goTo('morning')">Morning</a></li>
                 <li><a onclick="goTo('day')">Day</a></li>
                 <li><a onclick="goTo('evening')">Evening</a></li>
@@ -20,6 +21,15 @@
             </ul>
         </nav>       
     </header>  
+    <aside>
+        <nav>
+            <ul>
+                <li><a onclick="setSpeed(10)" class="selected">Fast</a></li>
+                <li><a onclick="setSpeed(20)">Medium</a></li>
+                <li><a onclick="setSpeed(50)">Slow</a></li>
+            </ul>
+        </nav>
+    </aside>
     <article>
        <div id="sunrise"></div>
        <div id="morning"></div>
