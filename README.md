@@ -15,7 +15,7 @@ Insert script before ```</body>``` :
 	</body>
 ```
 
-Use "goTo(id)" function on click. :
+Use goTo() function in onclick event:```onclick="goTo(id)"``` 
 
 # Usage example
 
@@ -30,4 +30,6 @@ Use "goTo(id)" function on click. :
 </nav>
 <article id="article">....</article>
 <footer id="bottom">...</footer>
+<script src="js/smooth-scroll.js"></script>
+</body>
 ```
