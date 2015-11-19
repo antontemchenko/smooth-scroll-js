@@ -1,6 +1,9 @@
 # smooth-scroll-js
 Smooh animation for scroll to element, bottom or top
 
+# Demo
+[Try DEMO](http://anton.temchenko.com.ua/dev/smooth-scroll-js/)
+
 # How to Use
 Insert script before ```</body>``` :
 ```...
