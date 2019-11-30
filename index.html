@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smooth Scroll Js</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,700,300italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="all" href="example/css/styles.css">
+    </head>
+    <body>
+    <h1>Smooth Scroll JS</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="goTo('sunrise')" class="active">SunRise</a></li>
+                <li><a onclick="goTo('morning')">Morning</a></li>
+                <li><a onclick="goTo('day')">Day</a></li>
+                <li><a onclick="goTo('evening')">Evening</a></li>
+                <li><a onclick="goTo('sunset')">SunSet</a></li>
+                <li><a onclick="goTo('night')">Night</a></li>
+            </ul>
+        </nav>       
+    </header>  
+    <aside>
+        <nav>
+            <ul>
+                <li><a onclick="setSpeed(10)" class="selected">Fast</a></li>
+                <li><a onclick="setSpeed(20)">Medium</a></li>
+                <li><a onclick="setSpeed(50)">Slow</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <article>
+       <div id="sunrise"></div>
+       <div id="morning"></div>
+       <div id="day"></div>
+       <div id="evening"></div>
+       <div id="sunset"></div>
+       <div id="night"></div>
+    </article> 
+
+    <script type="text/javascript" src="example/js/smooth-scroll.js"></script>    
+    </body>
+</html>
