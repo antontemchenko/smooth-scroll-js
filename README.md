@@ -5,7 +5,7 @@ Pure Javascript smooth scroll animation
 * Speed configuration
 
 # Demo
-[Try DEMO](http://anton.temchenko.com.ua/dev/smooth-scroll-js/)
+[Try DEMO](http://antontemchenko.github.io/smooth-scroll-js/)
 
 # How to Use
 Insert script before ```</body>``` :
